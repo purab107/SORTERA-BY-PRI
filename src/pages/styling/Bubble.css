@@ -1,0 +1,357 @@
+@import url('https://use.typekit.net/xxxxxxx.css'); /* Replace with your Adobe Fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Euclid Circular A', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif ;
+  background-color: white;
+  color: #505050; 
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 40px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Main Headings */
+.page-heading, .second-heading, .working-heading, .complexity-title {
+  color: #25265e;
+  font-weight: bold;
+  text-align: left; /* Start text from the left */
+}
+
+/* Specific Headings Styles */
+.page-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.second-heading, .working-heading, .complexity-title {
+  font-size: 28px;
+  margin: 30px 0 15px;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left; /* Start text from the left */
+}
+
+ol li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left; /* Start text from the left */
+}
+
+.bar-container {
+  background-color: #f5f5ff; /* Light grey background */
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 8px;
+  /*border: 1px solid #9a9a9a;*/
+}
+
+/* Style for the bar content boxes */
+.bar-content {
+  background: linear-gradient(145deg, #7a1bd2, #9a3bf2); /* Gradient for depth */
+  color: #ffffff; /* White text */
+  padding: 25px;
+  margin: 5px;
+  border-radius: 8px; /* Increased border-radius for softer edges */
+  display: inline-block;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5), /* Main shadow */
+  inset -4px -4px 10px rgba(255, 255, 255, 0.2); /* Shining effect inside */
+  transform: translateY(-2px); /* Slight lift effect */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Add a hover effect to enhance interaction */
+.bar-content:hover {
+  transform: translateY(-5px); /* Lift more on hover */
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6), /* Stronger shadow */
+  inset -6px -6px 15px rgba(255, 255, 255, 0.3); /* Stronger shine inside */
+}
+
+
+/* Floating animation */
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-5px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+/* Styling for headings and text */
+.box-heading {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bar-row p, .arrow-row p {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.bar-container-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Table Styles */
+.complexity-table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.complexity-table th, .complexity-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.complexity-table th {
+  background-color: #5e17eb; 
+  color: white;
+  text-align: left;
+  font-size: 16px;
+}
+
+.complexity-table td {
+  background-color: #f8f8f8;
+  text-align: left;
+  color: #333;
+}
+
+/* Code Snippet Box */
+.code-snippet {
+  background-color: #f5f5f5;
+  border-left: 4px solid #5e17eb;
+  padding: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 20px 0;
+  text-align: left;
+  overflow-x: auto;
+}
+
+
+.arrow-row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 200px;
+  width: 100px;
+  height: 70px; 
+}
+
+.arrow-row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 270px;
+  width: 100px;
+  height: 70px; 
+}
+
+.arrow-row3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 340px;
+  width: 100px;
+  height: 70px; 
+}
+
+.arrow-row4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 415px;
+  width: 100px;
+  height: 70px; 
+}
+ /**/
+.arrow-row5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 200px;
+  width: 100px;
+  height: 70px; 
+}
+
+.arrow-row6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 270px;
+  width: 100px;
+  height: 70px; 
+}
+
+.arrow-row7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 340px;
+  width: 100px;
+  height: 70px; 
+}
+
+/**/
+.arrow-row8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 200px;
+  width: 100px;
+  height: 70px; 
+}
+
+.arrow-row9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 270px;
+  width: 100px;
+  height: 70px; 
+}
+
+.arrow-row10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 200px;
+  width: 100px;
+  height: 70px; 
+}
+
+
+.swapping-arrow-front,
+.swapping-arrow-back {
+  font-size: 70px; 
+  position: absolute;
+  color: black; 
+  transform: rotate(180deg);
+}
+
+.swapping-arrow-back{
+  transform: scaleY(-1);
+  position: relative;
+  left: 36px;
+}
+
+.bar-container-footer {
+  color: #333;
+  font-size: 16px;
+  margin-top: 28px;
+  text-align: center;
+}
+
+.container-end {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.complexity-info{
+  text-align: left;
+  
+}
+
+.complexity-info h1,h2,h3{
+  color: #25265e;
+}
+
+.explain-bubble-sort-sortera{
+  text-align: left;
+
+}
+
+.explain-bubble-sort-sortera h1,h2,h3{
+  color: #25265e;
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css');
+
+pre{
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+code{
+  text-align: left;
+  line-height: 1.6;
+
+}
+
+.complex-box{
+  background-color: #e7e6e6;
+  padding: 3px;
+  border-radius: 3px;
+  color: #383838;
+  border: 1px solid rgb(211, 210, 210);
+} 
+
+.modern-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(145deg, #7800e0, #5e00b5); /* Gradient for depth */
+  border: none;
+  border-radius: 12px;
+  box-shadow: 
+      0 4px 6px rgba(0, 0, 0, 0.3),  /* Dark shadow for 3D effect */
+      0 2px 4px rgba(255, 255, 255, 0.2) inset; /* Light inner shadow for highlights */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.modern-button:hover {
+  background: linear-gradient(145deg, #5e00b5, #7800e0); /* Inverted gradient on hover */
+  box-shadow: 
+      0 6px 8px rgba(0, 0, 0, 0.4), /* Stronger shadow on hover */
+      0 3px 5px rgba(255, 255, 255, 0.2) inset; /* Stronger inner highlight on hover */
+  transform: translateY(-3px); /* Slight upward movement for 3D effect */
+}
+
+.modern-button:active {
+  background: #5e00b5; /* Slightly darker purple on click */
+  box-shadow: 
+      0 2px 4px rgba(0, 0, 0, 0.4), /* Reduced shadow on click */
+      0 1px 2px rgba(255, 255, 255, 0.1) inset; /* Less pronounced inner highlight on click */
+  transform: translateY(1px); /* Button presses down slightly */
+}

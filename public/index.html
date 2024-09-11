@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortera</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sorting-visualizer">
+        <header>
+            <nav class="navbar">
+                <img src="logoText.png" class="logo" alt="Sortera Logo">
+                <button id="generateArrayButton">Generate New Array</button>
+                <div class="slider-container">
+                    <label for="arraySize">Array Size</label>
+                    <input type="range" min="10" max="200" value="50" id="arraySize" class="slider" />
+                    <div class="slider-value" id="arraySizeValue">
+                        50
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <label for="animationSpeed">Animation Speed</label>
+                    <input type="range" min="1" max="5" value="3" id="animationSpeed" class="slider" />
+                    <div class="slider-value" id="animationSpeedValue">
+                        3
+                    </div>
+                </div>
+                <select id="algorithmDropdown" class="dropdown">
+                    <option value="">Select Algorithm ⮟</option>
+                    <option value="bubbleSort">Bubble Sort</option>
+                    <option value="selectionSort">Selection Sort</option>
+                    <option value="insertionSort">Insertion Sort</option>
+                    <option value="quickSort">Quick Sort</option>
+                    <option value="mergeSort">Merge Sort</option>
+                </select>
+            </nav>
+        </header>
+
+        <section>
+            <div class="array-container" id="arrayContainer"></div>
+            <br>
+            <div id="algorithmDetails" style="display: none;">
+                <h2>Algorithm Details</h2>
+                <p id="algorithmName"></p>
+                <p id="timeTaken"></p>
+                <p id="timeComplexity"></p>
+                <p id="spaceComplexity"></p>
+            </div>  
+        </section>
+
+        <footer>
+            <div id="color-guide">
+                <div class="color-box" style="background-color: yellow;"></div>
+                <span class="color-text">Highlights Array Elements Currently Being Compared</span>
+                
+                <div class="color-box" style="background-color: red;"></div>
+                <span class="color-text">Indicates Array Elements That Are Being Swapped</span>
+                
+                <div class="color-box" style="background-color: green;"></div>
+                <span class="color-text">Marks Array Elements That Are Sorted</span>
+              </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

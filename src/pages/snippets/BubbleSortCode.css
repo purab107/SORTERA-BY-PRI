@@ -1,0 +1,97 @@
+/* BubbleSortCode.css */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css');
+
+.tabbed-editor {
+  width: 80%;
+  max-width: 900px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tabbed-editor__nodes {
+  display: flex;
+  background-color: #6200ea;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.tabbed-editor__node {
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.tabbed-editor__node:hover,
+.tabbed-editor__node.active {
+  background-color: #3700b3;
+}
+
+.tabbed-editor__node a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.code-editor {
+  position: relative;
+}
+
+.code-editor__area {
+  display: none;
+  padding: 20px;
+  text-align: left; /* Ensures text aligns to the left */
+}
+
+.code-editor__area--active {
+  display: block;
+}
+
+.pre-code-wrapper {
+  position: relative;
+  background-color: #282c34;
+  color: #ffffff;
+  border-radius: 0 0 8px 8px;
+  padding: 20px;
+  overflow: auto;
+  text-align: left; /* Ensures text aligns to the left */
+}
+
+.copy-code-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffffff;
+  color: #6200ea;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  display: none;
+}
+
+.pre-code-wrapper:hover .copy-code-button {
+  display: block;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap; /* Allows wrapping of long code lines */
+  word-wrap: break-word; /* Break long words if necessary */
+  text-align: left; /* Ensures text aligns to the left */
+}
+
+.hljs {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  text-align: left; /* Ensures text aligns to the left */
+}
