@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
-    const handleClick = () => {
-        window.location.href = '/index.html', '_blank', 'noopener,noreferrer';
-      };
+   const handleClick = () => {
+  window.open('https://purab107.github.io/SORTERA/', '_blank', 'noopener,noreferrer');
+};
     return (
         <>
             <nav className='main-nav'>
